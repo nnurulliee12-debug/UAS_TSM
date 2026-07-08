@@ -64,6 +64,20 @@
             text-align: center;
         }
 
+        /* Tulisan Penanda Portfolio Atas - DIUBAH LEBIH BESAR & TEGAS */
+        .portfolio-tag {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            color: #3d261c;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+            border-bottom: 2px dashed #3d261c;
+            padding-bottom: 4px;
+            width: 80%;
+        }
+
         /* Desain Frame Polaroid Clean Tanpa Teks */
         .polaroid-frame {
             background-color: #ffffff;
@@ -73,7 +87,6 @@
             transform: rotate(-3deg); /* Efek miring estetik */
             transition: transform 0.3s ease;
             margin-bottom: 20px;
-            margin-top: 10px;
         }
 
         .polaroid-frame:hover {
@@ -217,7 +230,7 @@
 
         .socmed-actions {
             display: flex;
-            gap: 6px;
+            gap: 4px;
         }
 
         .socmed-btn {
@@ -225,11 +238,11 @@
             background-color: #ebdcb9;
             color: #3d261c;
             text-decoration: none;
-            font-size: 0.65rem;
+            font-size: 0.6rem;
             font-weight: 700;
             text-align: center;
             padding: 8px 0;
-            border-radius: 12px;
+            border-radius: 10px;
             transition: transform 0.2s;
         }
 
@@ -366,30 +379,38 @@
             font-weight: bold;
         }
 
-        /* 7. Card Kemampuan Tambahan */
+        /* 7. Card Kemampuan (Hard Skills & Soft Skills) */
         .skills-footer-card {
             background-color: #ebdcb9;
             border-radius: 25px;
-            padding: 16px 20px;
-            font-size: 0.72rem;
-            line-height: 1.4;
+            padding: 18px 20px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             text-align: left;
         }
 
+        .skills-section {
+            margin-bottom: 12px;
+        }
+
+        .skills-section:last-child {
+            margin-bottom: 0;
+        }
+
         .skills-footer-card strong {
+            font-size: 0.72rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             color: #3d261c;
-            display: inline-block;
-            margin-bottom: 4px;
+            display: block;
+            margin-bottom: 6px;
+            border-left: 3px solid #3d261c;
+            padding-left: 6px;
         }
 
         .skills-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 6px;
-            margin-top: 4px;
         }
 
         .tag {
@@ -412,8 +433,12 @@
             <span class="search-icon">🔍</span>
         </div>
 
-        <!-- 2. CARD BESAR UTAMA (Polaroid Polos & Minimalis) -->
+        <!-- 2. CARD BESAR UTAMA -->
         <div class="main-card">
+            
+            <!-- Tulisan Penanda yang Sudah Dibesarkan -->
+            <div class="portfolio-tag">✦ Digital Portfolio ✦</div>
+            
             <div class="polaroid-frame">
                 <div class="photo-area">
                     <img src="foto nurul.jpeg" alt="Nurul Aulia">
@@ -422,7 +447,7 @@
             <div class="brand-section">
                 <h1>NURUL AULIA</h1>
                 <p>
-                    Saya merupakan lulusan SMK 47 Jakarta yang saat ini sedang menempuh pendidikan di Universitas Mitra Bangsa Program Studi Manajemen. Saya memiliki pengalaman magang di bidang administrasi keuangan serta sebagai Resepsionis sekolah semasa SMK. Saya merupakan pribadi yang teliti, disiplin, dan bertanggung jawab.
+                    Saya merupakan lulusan SMK Negeri 47 Jakarta Jurusan Manajemen Perkantoran dan Layanan Bisnis yang saat ini sedang menempuh pendidikan S1 Manajemen di Universitas Mitra Bangsa. Sebagai mahasiswi semester 2 saya memiliki minat dalam bidang administrasi. Saya memiliki pengalaman magang di bidang administrasi keuangan serta sebagai Resepsionis sekolah semasa SMK. Saya merupakan pribadi yang komunikatif, teliti, disiplin, dan bertanggung jawab.
                 </p>
             </div>
         </div>
@@ -460,6 +485,7 @@
                 <div class="socmed-actions">
                     <a href="https://wa.me/6285880988202" target="_blank" class="socmed-btn">WhatsApp</a>
                     <a href="mailto:nnurulliee12@gmail.com" class="socmed-btn">Email</a>
+                    <a href="https://www.linkedin.com/in/nnurulliee-undefined-60b4a73b6?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="socmed-btn">LinkedIn</a>
                 </div>
                 <div class="contact-details">
                     📍 Jl. Kalibata Utara II RT03 RW07 No 16 Jakarta Selatan
@@ -476,16 +502,16 @@
                 <h3>EXPERIENCE</h3>
                 <div class="experience-scroll">
                     
-                    <!-- Bagian SMK 47 (Sekarang Paling Atas) -->
+                    <!-- Bagian SMK 47 -->
                     <div class="exp-section">
                         <div class="company">SMK Negeri 47 Jakarta</div>
                         <ul>
-                            <li>Pengalaman kerja sebagai Resepsionis sekolah.</li>
+                            <li>Pengalaman kerja nyata sebagai Resepsionis sekolah.</li>
                             <li>Manajemen tamu dan pelayanan informasi bisnis.</li>
                         </ul>
                     </div>
                     
-                    <!-- Bagian PT TASPEN (Sekarang di Bawah SMK 47) -->
+                    <!-- Bagian PT TASPEN -->
                     <div class="exp-section">
                         <div class="company">PT TASPEN (Persero)</div>
                         <ul>
@@ -518,15 +544,29 @@
 
         <!-- 7. CARD KEMAMPUAN -->
         <div class="skills-footer-card">
-            <strong>Key Skills & Competencies:</strong>
-            <div class="skills-tags">
-                <span class="tag">Dapat mengoperasikan Microsoft office</span>
-                <span class="tag">Pengelolaan arsip dan dokumen</span>
-                <span class="tag">Pengelolaan Kas Kecil</span>
-                <span class="tag">Komunikasi yang baik</span>
-                <span class="tag">Melakukan Pelayanan Prima yang baik</span>
-                <span class="tag">Resepsionis & Manajemen Tamu</span>
+            
+            <!-- Kategori Hard Skills -->
+            <div class="skills-section">
+                <strong>Hard Skills:</strong>
+                <div class="skills-tags">
+                    <span class="tag">Microsoft Office</span>
+                    <span class="tag">Pengelolaan Arsip & Dokumen</span>
+                    <span class="tag">Pengelolaan Kas Kecil</span>
+                    <span class="tag">Prosedur Resepsionis</span>
+                </div>
             </div>
+
+            <!-- Kategori Soft Skills -->
+            <div class="skills-section">
+                <strong>Soft Skills:</strong>
+                <div class="skills-tags">
+                    <span class="tag">Komunikasi Efektif</span>
+                    <span class="tag">Pelayanan Prima (Excellent Service)</span>
+                    <span class="tag">Manajemen Tamu</span>
+                    <span class="tag">Ketelitian & Disiplin</span>
+                </div>
+            </div>
+
         </div>
 
     </div>
